@@ -2,8 +2,8 @@
  * ----------------------------------------------------------------------------------------------------------------------------------
  *  jQuery WordCount plugin
  *  @author Anthony S. Wu
- *  @date January 14, 2015
- *  @version 0.6
+ *  @date January 15, 2015
+ *  @version 0.7.0
  *
  *  Note:
  *      Change "bind" function to "on", for jQuery version > 1.8

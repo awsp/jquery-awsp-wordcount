@@ -5,6 +5,11 @@ jQuery plug-in of word counting, primary targeted Japanese characters.
 Current Version: 0.7.0
 
 
+## Requirement
+------------------------------------------------------------
+jQuery 1.3.2+
+
+
 ## Usage
 ------------------------------------------------------------
 ```js
@@ -31,6 +36,11 @@ $(function() {
 - Convert to jQuery 1.8+
 - Add / Enhance a working demo
 - Convert underscore variable to camelCase
+
+
+## Browser Capability
+------------------------------------------------------------
+
 
 
 ## License

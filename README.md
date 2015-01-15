@@ -1,11 +1,11 @@
-# jQuery-awsp-wordcount, Japanese Word Count Plug-in
+# Japanese Word Count Plug-in
 ------------------------------------------------------------
-jQuery plugin of word counting, primary targeted Japanese characters.
+jQuery plug-in of word counting, primary targeted Japanese characters.
 
 Current Version: 0.7.0
 
 
-# Usage
+## Usage
 ------------------------------------------------------------
 ```js
 $(function() {
@@ -26,8 +26,13 @@ $(function() {
 ```
 
 
-# ToDo:
+## ToDo:
 ------------------------------------------------------------
 - Convert to jQuery 1.8+
 - Add / Enhance a working demo
 - Convert underscore variable to camelCase
+
+
+## License
+------------------------------------------------------------
+MIT License

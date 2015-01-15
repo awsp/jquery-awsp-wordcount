@@ -16,17 +16,15 @@
         <script>
         $(function() {
             var t1 = "#message";
-            var t2 = "[name='button[bCheck]']";
+            var t2 = "[type=submit]";
             $(t1).wordcount({
                 wc_target_indicator_wrapper: "div",
                 wc_target_indicator_message: "Remaining words: ",
-                max_word: 200
+                max_word: 3
             }, function() {
-                $(t1).closest("form").find(t2).prop("disabled", true).addClass("disabled").addClass("wc-indicator-disabled");
+                $(t2).prop("disabled", true);
             }, function() {
-                if($((t1)).closest("form").find(t2).prop("disabled")) {
-                    $(t1).closest("form").find(t2).prop("disabled", false).removeClass("disabled").removeClass("wc-indicator-disabled");
-                }
+                $(t2).prop("disabled", false);
             });
 
         });

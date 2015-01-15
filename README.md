@@ -1,2 +1,33 @@
-# jquery-awsp-wordcount
-jQuery plugin of word count, targeted Japanese especially
+# jQuery-awsp-wordcount, Japanese Word Count Plug-in
+------------------------------------------------------------
+jQuery plugin of word counting, primary targeted Japanese characters.
+
+Current Version: 0.7.0
+
+
+# Usage
+------------------------------------------------------------
+```js
+$(function() {
+    var t1 = "#message";
+    var t2 = "[name='button[bCheck]']";
+
+    $(t1).wordcount({
+        wc_target_indicator_wrapper: "div",
+        wc_target_indicator_message: "Remaining words: ",
+        max_word: 200
+    }, function() {
+        // what to do when max limit is reached
+    }, function() {
+        // what to do when max limit is not reached
+    });
+
+});
+```
+
+
+# ToDo:
+------------------------------------------------------------
+- Convert to jQuery 1.8+
+- Add / Enhance a working demo
+- Convert underscore variable to camelCase

@@ -1,0 +1,4 @@
+.warning { color: red; }
+.disabled { cursor: default; }
+.wc-indicator-disabled { filter: alpha(opacity=60); opacity: 0.6;  }
+.wc-indicator { font-size: 12px; padding: 3px 0 0;}

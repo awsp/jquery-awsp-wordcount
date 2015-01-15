@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="awsp.wordcount.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="jquery.awsp.wordcount.js"></script>
+
+        <script>
+        $(function() {
+            var t1 = "#message";
+            var t2 = "[name='button[bCheck]']";
+            $(t1).wordcount({
+                wc_target_indicator_wrapper: "div",
+                wc_target_indicator_message: "Remaining words: ",
+                max_word: 200
+            }, function() {
+                $(t1).closest("form").find(t2).prop("disabled", true).addClass("disabled").addClass("wc-indicator-disabled");
+            }, function() {
+                if($((t1)).closest("form").find(t2).prop("disabled")) {
+                    $(t1).closest("form").find(t2).prop("disabled", false).removeClass("disabled").removeClass("wc-indicator-disabled");
+                }
+            });
+
+        });
+        </script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <textarea name="message" id="message" rows="8" cols="300" ></textarea>
+        <div id="contact_btn">
+            <input name="next" type="submit" value="Next" />
+        </div>
+
+
+    </body>
+</html>
